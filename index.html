@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sign-in-form">
+            <h2>Expense Tracker</h2>
+          
+                <div class="input-group">
+                    <label for="name">Items name: </label>
+                    <input type="text" id="input-box" name="text"  placeholder="Enter item name">
+                </div>
+                <div class="input-group">
+                    <label for="password">Items Amount:</label>
+                    <input type="number" id="amount" name="" onkeydown="addEnter(event)" placeholder="Enter item price">
+                </div>
+                <div class="btn">
+                    <button type="button" onclick="add()">Add Item</button>
+                    <button type="button" onclick="clearAll(event)" id="clear">Clear All</button>
+                
+
+                </div>
+
+            <div class="info">    
+    
+                    <ol class="items" id="list">
+                        <!-- <li>Mango Rs. 100</li>
+                        <li>Apple Rs. 80</li> -->
+                       
+                    </ol>
+                </div>  
+
+                <div class="total" >              
+                   <h3>Total: </h3> <span id="total"></span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
